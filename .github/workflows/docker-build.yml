@@ -27,7 +27,7 @@ jobs:
       - name: Set up kubectl
         uses: azure/setup-kubectl@v3
         with:
-          version: '1.32.2'
+          version: '1.33.0'
 
       - name: Configure Kubeconfig
         run: echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
