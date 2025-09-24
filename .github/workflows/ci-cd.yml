@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: self-hosted   # 👈 runs on your local machine with Minikube
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
@@ -30,4 +30,4 @@ jobs:
           kubectl apply -f k8s/wisecow-deployment.yaml
           kubectl apply -f k8s/wisecow-service.yaml
           kubectl apply -f k8s/wisecow-ingress.yaml
-          kubectl rollout status deployment/wisecow
+          kubectl rollout status deployment/wisecow-deployment
