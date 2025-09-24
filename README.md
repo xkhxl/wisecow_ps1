@@ -45,7 +45,7 @@ You should see:
 - NodePort service exposing port 4499
 - Ingress serving traffic with TLS
 - Logs showing HTTP GET requests
-##Problem Statement 2 - Log File Analyzer & Application Health Checker
+## Problem Statement 2 - Log File Analyzer & Application Health Checker
 This folder contains solutions for Problem Statement 2 of the assignment. It includes two scripts:
 
 Log File Analyzer (log_analyzer.py)
