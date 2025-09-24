@@ -45,3 +45,32 @@ You should see:
 - NodePort service exposing port 4499
 - Ingress serving traffic with TLS
 - Logs showing HTTP GET requests
+##Problem Statement 2 - Log File Analyzer & Application Health Checker
+This folder contains solutions for Problem Statement 2 of the assignment. It includes two scripts:
+
+Log File Analyzer (log_analyzer.py)
+
+- Analyzes web server logs (access.log) for common patterns.
+- Reports:
+  - Total requests
+  - Number of 404 errors
+  - Top 10 requested pages
+  - Top 10 IP addresses
+- Usage:
+  python3 problem_statement_2/log_analyzer.py
+- Make sure access.log is present in the problem_statement_2 folder or update the LOG_FILE path in the script.
+
+Application Health Checker (app_health_checker.py)
+
+- Checks if a web application is up by sending an HTTP request.
+- Reports [UP] if the application is responding with status code 200, otherwise [DOWN].
+- Usage:
+  python3 problem_statement_2/app_health_checker.py
+- Update the URL variable in the script with the target application's URL.
+
+Notes:
+
+- Both scripts are written in Python 3.
+- requests library is required for app_health_checker.py (pip install requests).
+- Tested on Linux.
+
